@@ -20,10 +20,15 @@ class Locks
     /**
      * 
      * @param string $key
+     * @param string $options
      */
-    public function acquire(string $key): void
+    public function acquire(string $key, array $options = []): void
     {
-        Lock::acquire($key);
+        $temp = [];
+        if (isset($options['timeout'])) {
+            $temp['timeout'] = $options['timeout'];
+        }
+        Lock::acquire($key, $temp);
     }
 
     /**
