@@ -10,7 +10,7 @@
 /**
  * @runTestsInSeparateProcesses
  */
-class LocksTest extends BearFrameworkAddonTestCase
+class LocksTest extends BearFramework\AddonTests\PHPUnitTestCase
 {
 
     /**
