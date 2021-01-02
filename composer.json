@@ -1,7 +1,12 @@
 {
     "name": "ivopetkov/locks-bearframework-addon",
     "description": "Locks addon for Bear Framework",
-    "keywords": ["lock", "locks", "addon", "Bear Framework"],
+    "keywords": [
+        "lock",
+        "locks",
+        "addon",
+        "Bear Framework"
+    ],
     "homepage": "https://github.com/ivopetkov/locks-bearframework-addon",
     "license": "MIT",
     "authors": [
@@ -14,13 +19,14 @@
     "require": {
         "php": ">=7.1",
         "bearframework/bearframework": "1.*",
-        "ivopetkov/lock": "0.2.*|0.3.*"
+        "ivopetkov/lock": "1.*"
     },
     "require-dev": {
-        "bearframework/addon-tests": "0.3.*",
-        "phpunit/phpunit": "7.*"
+        "bearframework/addon-tests": "1.*"
     },
     "autoload": {
-        "files": ["autoload.php"]
+        "files": [
+            "autoload.php"
+        ]
     }
 }
