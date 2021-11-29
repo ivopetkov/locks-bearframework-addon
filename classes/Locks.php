@@ -67,5 +67,4 @@ class Locks
     {
         return (string) Lock::getKeyPrefix();
     }
-
 }

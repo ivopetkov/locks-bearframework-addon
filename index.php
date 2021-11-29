@@ -13,9 +13,9 @@ $app = App::get();
 $context = $app->contexts->get(__DIR__);
 
 $context->classes
-        ->add('IvoPetkov\BearFrameworkAddons\Locks', 'classes/Locks.php');
+    ->add('IvoPetkov\BearFrameworkAddons\Locks', 'classes/Locks.php');
 
 $app->shortcuts
-        ->add('locks', function() {
-            return new IvoPetkov\BearFrameworkAddons\Locks();
-        });
+    ->add('locks', function () {
+        return new IvoPetkov\BearFrameworkAddons\Locks();
+    });
