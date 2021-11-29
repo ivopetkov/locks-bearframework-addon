@@ -49,5 +49,4 @@ class LocksTest extends BearFramework\AddonTests\PHPUnitTestCase
         $app->locks->release('key1');
         $this->assertFalse($app->locks->exists('key1'));
     }
-
 }
